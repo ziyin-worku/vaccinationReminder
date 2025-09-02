@@ -1,4 +1,6 @@
+/* ============================= */
 /* Reset and Base Styles */
+/* ============================= */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,9 @@ body {
     min-height: 100vh;
 }
 
+/* ============================= */
 /* Auth Styles */
+/* ============================= */
 .auth-container {
     min-height: 100vh;
     display: flex;
@@ -81,7 +85,9 @@ body {
     color: #1f2937;
 }
 
+/* ============================= */
 /* Form Styles */
+/* ============================= */
 .form-group {
     margin-bottom: 20px;
 }
@@ -112,7 +118,9 @@ body {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
+/* ============================= */
 /* Button Styles */
+/* ============================= */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -178,6 +186,7 @@ body {
     transform: none;
 }
 
+/* ============================= */
 /* Auth Switch */
 .auth-switch {
     text-align: center;
@@ -196,12 +205,14 @@ body {
     text-decoration: underline;
 }
 
+/* ============================= */
 /* App Container */
 .app-container {
     min-height: 100vh;
     background: #f9fafb;
 }
 
+/* ============================= */
 /* Header */
 .header {
     background: white;
@@ -232,6 +243,7 @@ body {
     color: #374151;
 }
 
+/* ============================= */
 /* Main Content */
 .main-content {
     max-width: 1200px;
@@ -303,6 +315,7 @@ body {
     font-weight: 500;
 }
 
+/* ============================= */
 /* Action Buttons */
 .action-buttons {
     display: flex;
@@ -311,6 +324,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* ============================= */
 /* Section Styles */
 .section {
     background: white;
@@ -372,6 +386,7 @@ body {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
+/* ============================= */
 /* Records Container */
 .records-container {
     padding: 24px;
@@ -487,6 +502,7 @@ body {
     color: #991b1b;
 }
 
+/* ============================= */
 /* Reminders */
 .reminders-container,
 .reminders-list {
@@ -529,6 +545,7 @@ body {
     color: #991b1b;
 }
 
+/* ============================= */
 /* Modal Styles */
 .modal {
     display: none;
@@ -627,6 +644,7 @@ body {
     justify-content: flex-end;
 }
 
+/* ============================= */
 /* Loading */
 .loading {
     text-align: center;
@@ -640,6 +658,7 @@ body {
     display: block;
 }
 
+/* ============================= */
 /* Empty State */
 .empty-state {
     text-align: center;
@@ -665,6 +684,7 @@ body {
     margin-bottom: 24px;
 }
 
+/* ============================= */
 /* Toast Notifications */
 .toast-container {
     position: fixed;
@@ -756,6 +776,7 @@ body {
     color: #6b7280;
 }
 
+/* ============================= */
 /* Responsive Design */
 @media (max-width: 768px) {
     .auth-card {
@@ -833,6 +854,7 @@ body {
     }
 }
 
+/* ============================= */
 /* Utility Classes */
 .hidden {
     display: none !important;
@@ -853,3 +875,107 @@ body {
 .mt-2 { margin-top: 16px; }
 .mt-3 { margin-top: 24px; }
 .mt-4 { margin-top: 32px; }
+
+/* ============================= */
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: #f3f4f6;
+}
+
+body.dark-mode .auth-card {
+    background: #1f2937cc;
+    color: #f3f4f6;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .auth-switch,
+body.dark-mode .form-group label,
+body.dark-mode .toast-message,
+body.dark-mode .record-details,
+body.dark-mode .reminder-info p {
+    color: #d1d5db;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background: #374151;
+    border-color: #4b5563;
+    color: #f3f4f6;
+}
+
+body.dark-mode input:focus,
+body.dark-mode select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+body.dark-mode .btn-secondary {
+    background: #374151;
+    color: #d1d5db;
+    border-color: #4b5563;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background: #4b5563;
+    color: #f3f4f6;
+}
+
+body.dark-mode .app-container {
+    background: #111827;
+}
+
+body.dark-mode .header {
+    background: #1f2937;
+    border-bottom-color: #374151;
+}
+
+body.dark-mode .stat-card {
+    background: #1f2937;
+    color: #f3f4f6;
+}
+
+body.dark-mode .record-card {
+    background: #1f2937;
+    border-color: #4b5563;
+    color: #f3f4f6;
+}
+
+body.dark-mode .record-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 14px rgba(102, 126, 234, 0.25);
+}
+
+body.dark-mode .modal-content {
+    background: #1f2937;
+    color: #f3f4f6;
+}
+
+body.dark-mode .toast {
+    background: #374151;
+    color: #f3f4f6;
+}
+
+body.dark-mode .toast.success {
+    border-left-color: #10b981;
+}
+
+body.dark-mode .toast.error {
+    border-left-color: #ef4444;
+}
+
+body.dark-mode .toast.info {
+    border-left-color: #3b82f6;
+}
+
+body.dark-mode .reminder-card {
+    background: #1f2937;
+    border-color: #4b5563;
+    color: #f3f4f6;
+}
+
+body.dark-mode .reminder-card.overdue {
+    background: #991b1b;
+    border-color: #ef4444;
+    color: #fef2f2;
+}

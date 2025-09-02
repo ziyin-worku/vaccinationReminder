@@ -13,6 +13,7 @@ A modern, secure web application for tracking personal vaccination records and m
 - Add, edit, and delete vaccination records
 - Support for common vaccines (COVID-19, Flu, MMR, etc.)
 - Custom vaccine name support
+
 - Dose tracking and scheduling
 - Date management for vaccinations
 
